@@ -15,14 +15,9 @@ int touchState = 0;
 
 void setup() {
 
-    // TODO 3:
-    // Initialize Serial communication (9600 baud rate)
-
-    // TODO 4:
-    // Configure touch pin as INPUT
-
-    // TODO 5:
-    // Print system initialization message
+    Serial.begin(9600);
+    pinMode(touchPin, INPUT);
+    Serial.println("TTP223 Touch Sensor System Initialized...");
 }
 
 void loop() {
